@@ -3,21 +3,51 @@
 
 <style>
 
+    * {
+        box-sizing: border-box;
+    }
     html,
     body {
         height: 100%;
+        margin: 0;
     }
-
     .time-wrapper {
+        padding: 5%;
         font-family: sans-serif;
-        width: 100%;
         height: inherit;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        font-size: 250px;
+        border: 0.3em solid green;
     }
 
+@media (max-width: 5000px) {
+
+    .time-wrapper {
+        font-size: 20em;
+    }
+}
+
+@media (max-width: 1499px) {
+
+    .time-wrapper {
+        font-size: 10em;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .time-wrapper {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .time-wrapper {
+        font-size: 3em;
+    }
+}
 </style>
 
 <head>
